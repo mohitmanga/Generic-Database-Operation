@@ -1,0 +1,36 @@
+<jsp:root
+	xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:form="http://www.springframework.org/tags/form"
+	xmlns:spring="http://www.springframework.org/tags"
+	xmlns:mmtsecure="http://www.admin.makemytrip.com/security/tags" 
+	xmlns:tiles="http://tiles.apache.org/tags-tiles" version="2.0">
+	
+	<jsp:directive.page isELIgnored="false" />
+	<jsp:directive.page contentType="text/html;charset=UTF-8" />
+	<jsp:output omit-xml-declaration="yes" />
+
+	<HTML xmlns="http://www.w3.org/1999/xhtml">
+		<HEAD>
+		
+		<TITLE>Error Page</TITLE>
+		
+		<style type="text/css">
+			.errorDiv {
+			    background: -moz-linear-gradient(center top , #FFFFFF, #F8F8F8) repeat scroll 0 0 #F8F8F8;
+			    border: 1px solid #D8D6D6;
+			    border-radius: 5px 5px 5px 5px;
+			    color: #FF0000;
+			    font-size: 22px;
+			    height: 240px;
+			    padding-top: 25px;
+			    text-align: center;
+			}
+		</style>
+				
+		</HEAD>
+		<BODY topmargin='0' leftmargin='0' marginwidth='0' marginheight='0' bgcolor='#bdd5e0'>
+			<div id="errorBox"><div class="errorDiv">${text}</div></div>
+		</BODY>
+	</HTML>
+</jsp:root>
